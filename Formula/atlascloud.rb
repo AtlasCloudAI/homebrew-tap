@@ -1,26 +1,26 @@
 class Atlascloud < Formula
   desc "CLI for AtlasCloud AI models"
   homepage "https://atlascloud.ai"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.2/cli_0.1.2_darwin_arm64.tar.gz"
-      sha256 "c9a3a365766114200c1fbbb2f387aa652b00ac15eda3490c2c2dfcf957766a75"
+      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.3/cli_0.1.3_darwin_arm64.tar.gz"
+      sha256 "efea0d3c2f7125a7dbbc5db153ad56e1b5a1b5212927f54550e0fe323e987e30"
     else
-      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.2/cli_0.1.2_darwin_amd64.tar.gz"
-      sha256 "43608a19965beba51e523100a1c91d3394cd32407a4c5da51b3881ee665cde5f"
+      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.3/cli_0.1.3_darwin_amd64.tar.gz"
+      sha256 "7521fa94ef49b282467bb3445c72bbf51033822ef7276e7510d9c00c4781d013"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.2/cli_0.1.2_linux_arm64.tar.gz"
-      sha256 "fdaa2c451fad859aafd1f0303cc59d3c914bbe08f95707118a1fcfec4e438eaf"
+      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.3/cli_0.1.3_linux_arm64.tar.gz"
+      sha256 "bf5e0d173a1ae1d8401d7ce705a5145230ec305c70c113d6cead89bd10e54fe4"
     else
-      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.2/cli_0.1.2_linux_amd64.tar.gz"
-      sha256 "3487528865b91f9107b75a66088f21c36cc7a7c2949f26124651a20c43b744e1"
+      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.3/cli_0.1.3_linux_amd64.tar.gz"
+      sha256 "fb3a05f0eb4a3adaa259da0d04b28d7b4547ec572cee0a7f304c33bc18199f66"
     end
   end
 
