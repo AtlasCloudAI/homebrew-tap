@@ -5,21 +5,21 @@
 class Atlascloud < Formula
   desc "CLI for AtlasCloud AI models"
   homepage "https://atlascloud.ai"
-  version "0.1.31"
+  version "0.1.32"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.31/cli_0.1.31_darwin_amd64.tar.gz"
-      sha256 "e8ca0f85629984135bc88844ff1997816b7878517e1628425405f7f6eb97fb7e"
+      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.32/cli_0.1.32_darwin_amd64.tar.gz"
+      sha256 "3731a6e75f98f5942dd55567b31cf5215b3e0ce2646a80c4a8f3f7a9186508bb"
 
       define_method(:install) do
         bin.install "atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.31/cli_0.1.31_darwin_arm64.tar.gz"
-      sha256 "9202961d2060670e51bbe3257f1def2b4287d688b977f5443f26f8cf67494fef"
+      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.32/cli_0.1.32_darwin_arm64.tar.gz"
+      sha256 "92f136bad130c87139ce16015cfb5b755e6f028effef8d30795d75679b239af6"
 
       define_method(:install) do
         bin.install "atlas"
@@ -29,15 +29,15 @@ class Atlascloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.31/cli_0.1.31_linux_amd64.tar.gz"
-      sha256 "67dd0f4ac4e46f1453d1c0f8a4aaead62a1b937a7f145ec02d4cbcbf080d377e"
+      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.32/cli_0.1.32_linux_amd64.tar.gz"
+      sha256 "4ff6094986b08e36a60b67ee78cdf94d28766e4e66da8f2688c26880948b83fe"
       define_method(:install) do
         bin.install "atlas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.31/cli_0.1.31_linux_arm64.tar.gz"
-      sha256 "8423e544f2cb41336b36142a26affca67696ba8c8af5170a626a81110f13fec1"
+      url "https://github.com/AtlasCloudAI/cli/releases/download/v0.1.32/cli_0.1.32_linux_arm64.tar.gz"
+      sha256 "1f19c90e4feb581e395ec6348bf0fd9818cf7fb53146ce19aac512a248d09489"
       define_method(:install) do
         bin.install "atlas"
       end
